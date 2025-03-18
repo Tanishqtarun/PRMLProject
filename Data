@@ -1,1 +1,2 @@
-
+handwritten Digit Recognition using K nearest neigbour 
+The goal is to classify handwritten digits (0–9) from the MNIST dataset using the k-NN algorithm. This will involve downloading the dataset, preprocessing it, implementing k-NN, and evaluating its performance

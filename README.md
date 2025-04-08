@@ -1,1 +1,2 @@
 # PRMLProject
+Handwritten Digit recognition

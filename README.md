@@ -85,22 +85,21 @@ Live Prediction
 
 8. How to Run
 
-   1. Clone the repository:
+1. Clone the repository:
    ```bash
    git clone https://github.com/your-username/handwritten-digit-recognition.git
    cd handwritten-digit-recognition
    
-  2.Install dependencies:
-    pip install -r requirements.txt
+2.Install dependencies:
+pip install -r requirements.txt
 
-  3.Run the training script:
-    python train_model.py
+3.Run the training script:
+python train_model.py
 
-  4.Launch the real-time prediction UI:
-    python live_prediction.py
+4.Launch the real-time prediction UI:
+python live_prediction.py
 
 9.Acknowledgements
 
 MNIST dataset by Yann LeCun
-
 Scikit-learn and OpenCV documentation

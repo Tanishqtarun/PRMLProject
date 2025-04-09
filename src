@@ -1,1 +1,42 @@
+src/
+├── __init__.py
+├── data_preprocessing.py
+├── model_training.py
+├── model_evaluation.py
+├── live_prediction.py
+├── utils.py
 
+What Each File Should Contain
+
+1.`data_preprocessing.py`
+   - Load MNIST dataset (or custom CSV)
+   - Binarize pixel values
+   - Shuffle and normalize data
+   - Optionally perform noise reduction / data augmentation
+
+2.`model_training.py`
+   - Define and train models: KNN, Linear Regression, Decision Tree, Naive Bayes, SVM
+   - Save trained models (using `joblib` or `pickle`)
+   - Include hyperparameter tuning logic (GridSearchCV, etc.)
+
+3.`model_evaluation.py`
+   - Load trained models
+   - Evaluate performance using accuracy, precision, recall, F1-score
+   - Print or plot confusion matrices and classification reports
+
+4.`live_prediction.py`
+   - GUI or canvas for drawing digits (using `Tkinter`, `OpenCV`, or `Streamlit`)
+   - Load the trained model and predict digit in real-time
+
+5.`utils.py`
+   - Helper functions (e.g., save/load model, image preprocessing, drawing input conversions)
+
+6.`__init__.py`
+   - Makes `src` a Python package; usually empty
+
+Optional (but helpful) Files Outside `src/`
+
+- `train_model.py` – Entry script to run training using functions from `src/`
+- `requirements.txt` – List of all required Python packages
+- `README.md` – Project documentation
+- `notebooks/` – Jupyter notebooks for experiments (optional)

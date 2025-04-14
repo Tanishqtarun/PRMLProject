@@ -24,14 +24,10 @@ What Each File Should Contain
    - Evaluate performance using accuracy, precision, recall, F1-score
    - Print or plot confusion matrices and classification reports
 
-4.`live_prediction.py`
-   - GUI or canvas for drawing digits (using `Tkinter`, `OpenCV`, or `Streamlit`)
-   - Load the trained model and predict digit in real-time
-
-5.`utils.py`
+4.`utils.py`
    - Helper functions (e.g., save/load model, image preprocessing, drawing input conversions)
 
-6.`__init__.py`
+5.`__init__.py`
    - Makes `src` a Python package; usually empty
 
 Optional (but helpful) Files Outside `src/`

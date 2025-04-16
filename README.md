@@ -39,17 +39,7 @@ Labels: Digits from 0 to 9
 
 Train and evaluate models to accurately classify handwritten digits based on pixel values. The final system should support real-time digit recognition.
 
-4. Progress So Far
-
-Data Collection and Preprocessing
-- Collected and converted images to array format.
-- Pixel values binarized:
-  - 0 for pixel values between 0–100
-  - 1 for pixel values between 100–255
-- Saved dataset in CSV format.
-- Data shuffled for unbiased training.
-
-5.Model Training
+4.Model Training
 
 Implemented and evaluated the following machine learning models:
 
@@ -86,7 +76,7 @@ Decision Tree                | A simple yet interpretable tree-based classificat
 Bayesian Classifier          | Probabilistic model based on Bayes’ theorem.                           | Bayesian_Classifier_model.ipynb    |
 Linear Regression            | Adapted for classification using thresholding.                         | Linear_Regression_model.ipynb      |  
 
-Evaluation Metrics:
+5.Evaluation Metrics:
 
 Each model is evaluated using the following metrics:
 Accuracy
@@ -94,17 +84,17 @@ Precision, Recall & F1-Score
 Confusion Matrix
 Inference Time
 
-Visualizations:
+6.Visualizations:
 
 Learning curves
 Confusion matrices
 PCA-based 2D visualizations of high-dimensional data
 Sample misclassifications
 
-Live Prediction
+7.Live Prediction
 - Developed a real-time digit recognition interface allowing users to draw digits for prediction.
 
-6. Challenges Encountered
+8. Challenges Encountered
 
 - Low Accuracy with Linear Regression: Unable to model complex patterns.
 - Data Noise: Needs improved preprocessing and noise filtering.
@@ -116,7 +106,7 @@ Live Prediction
   - Choice of distance metric impacts accuracy
   - Curse of dimensionality affects performance
     
-7. Technologies Used
+9. Technologies Used
 
 - Python
 - NumPy, Pandas
@@ -124,7 +114,7 @@ Live Prediction
 - OpenCV (for live digit capture)
 - Tkinter / PyQt / Streamlit (for GUI)
 
-8. How to Run
+10. How to Run
 
 1. Clone the repository:
    ```bash
@@ -140,13 +130,13 @@ python train_model.py
 4.Launch the real-time prediction UI:
 python live_prediction.py
 
-9.Acknowledgments
+11.Acknowledgments
 
 MNIST dataset by Yann LeCun et al.
 References from PRML lectures and external scikit-learn documentation
 Visualization libraries: matplotlib, seaborn, plotly
 
-10.Future Work
+12.Future Work
 
 Hyperparameter tuning using Grid Search or Bayesian Optimization
 Integration with a GUI using Tkinter or Streamlit for digit input

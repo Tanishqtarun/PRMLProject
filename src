@@ -30,9 +30,3 @@ What Each File Should Contain
 5.`__init__.py`
    - Makes `src` a Python package; usually empty
 
-Optional (but helpful) Files Outside `src/`
-
-- `train_model.py` – Entry script to run training using functions from `src/`
-- `requirements.txt` – List of all required Python packages
-- `README.md` – Project documentation
-- `notebooks/` – Jupyter notebooks for experiments (optional)

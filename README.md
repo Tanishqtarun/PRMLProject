@@ -1,14 +1,39 @@
 Handwritten Digit Recognition with MNIST
 
+📁 Project Structure
+PRMLProject/
+├── Data/                            # Dataset files
+├── Dataset/                         # Backup or preprocessed data
+├── src/                             # Source code
+│   └── utils.py                     # Utility functions
+├── Bayesian_Classifier_model.ipynb
+├── Decision_tree_model.ipynb
+├── KNN_model.ipynb
+├── Linear_Regression_model.ipynb
+├── Support_Vector_Machine_model.ipynb
+├── Handwritten Digit Recognition_Midreport.pdf
+└── README.md
+
 1. Project Overview
 
-This project aims to build a machine learning model capable of recognizing handwritten digits (0–9) using the MNIST dataset. It explores multiple classification algorithms and evaluates their performance, culminating in a real-time digit recognition system.
+This project implements and compares multiple machine learning algorithms to classify handwritten digits from the MNIST dataset. It aims to explore both linear and nonlinear classifiers, highlight their performance, and evaluate their real-world applicability, especially in real-time digit recognition systems like postal code readers or bank check digitizers.
 
-2. Dataset
+2.Motivation
+Handwriting recognition is a classic machine learning task with practical significance. Despite being well-studied, it offers valuable insights into:
+Feature selection and dimensionality reduction
+Model training and evaluation
+Trade-offs between accuracy and computational complexity
+Generalization and overfitting behavior
 
-- Source: [MNIST Dataset](http://yann.lecun.com/exdb/mnist/)
-- Size: 70,000 grayscale images (60,000 for training, 10,000 for testing)
-- Format: 28x28 pixel grayscale images of handwritten digits
+
+📂 Dataset
+Name: Modified National Institute of Standards and Technology (MNIST)
+Source: Yann LeCun’s MNIST Database
+Structure:
+60,000 training images
+10,000 testing images
+Each image: 28x28 pixels (grayscale)
+Labels: Digits from 0 to 9
 
 3. Problem Statement
 
@@ -24,7 +49,7 @@ Data Collection and Preprocessing
 - Saved dataset in CSV format.
 - Data shuffled for unbiased training.
 
-Model Training
+5.Model Training
 
 Implemented and evaluated the following machine learning models:
 
@@ -51,10 +76,35 @@ Implemented and evaluated the following machine learning models:
   - Provided high accuracy and good generalization.
   - Computationally intensive for large datasets.
 
+Implemented Models
+
+Model                        | Description                                                            | Notebook
+___________________________________________________________________________________________________________________________________________
+K-Nearest Neighbors (KNN)    | Non-parametric model that classifies based on distance from neighbors. | KNN_model.ipynb                    |
+Support Vector Machine (SVM) | A powerful linear classifier with kernel support for non-linear cases. | Support_Vector_Machine_model.ipynb |
+Decision Tree                | A simple yet interpretable tree-based classification model.            | Decision_tree_model.ipynb          |
+Bayesian Classifier          | Probabilistic model based on Bayes’ theorem.                           | Bayesian_Classifier_model.ipynb    |
+Linear Regression            | Adapted for classification using thresholding.                         | Linear_Regression_model.ipynb      |  
+
+Evaluation Metrics:
+
+Each model is evaluated using the following metrics:
+Accuracy
+Precision, Recall & F1-Score
+Confusion Matrix
+Inference Time
+
+Visualizations:
+
+Learning curves
+Confusion matrices
+PCA-based 2D visualizations of high-dimensional data
+Sample misclassifications
+
 Live Prediction
 - Developed a real-time digit recognition interface allowing users to draw digits for prediction.
 
-5. Challenges Encountered
+6. Challenges Encountered
 
 - Low Accuracy with Linear Regression: Unable to model complex patterns.
 - Data Noise: Needs improved preprocessing and noise filtering.
@@ -65,16 +115,7 @@ Live Prediction
   - Slow prediction time
   - Choice of distance metric impacts accuracy
   - Curse of dimensionality affects performance
-
-6. Remaining Tasks
-
-- [ ] Optimize KNN, Decision Tree, Bayesian Classifier, and SVM models
-- [ ] Improve preprocessing using noise reduction and data augmentation
-- [ ] Tune hyperparameters for all models
-- [ ] Evaluate models using accuracy, precision, recall, and F1-score
-- [ ] Build a user interface for real-time digit prediction
-- [ ] Finalize deployment
-
+    
 7. Technologies Used
 
 - Python
@@ -99,7 +140,18 @@ python train_model.py
 4.Launch the real-time prediction UI:
 python live_prediction.py
 
-9.Acknowledgements
+9.Acknowledgments
 
-MNIST dataset by Yann LeCun
-Scikit-learn and OpenCV documentation
+MNIST dataset by Yann LeCun et al.
+References from PRML lectures and external scikit-learn documentation
+Visualization libraries: matplotlib, seaborn, plotly
+
+10.Future Work
+
+Hyperparameter tuning using Grid Search or Bayesian Optimization
+Integration with a GUI using Tkinter or Streamlit for digit input
+Real-time recognition via webcam and OpenCV
+Neural Network / Deep Learning models (CNNs)
+
+
+
